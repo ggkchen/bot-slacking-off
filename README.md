@@ -1,4 +1,4 @@
-# Gavpad!
+# Gabot!
 
 <img width="245" height="96" alt="Screenshot 2026-06-29 181831" src="https://github.com/user-attachments/assets/f66c6ae0-b123-4955-9e54-5782d21748b6" />
 
