@@ -90,7 +90,7 @@ app.command("/gabot-catpic", async ({ command, ack, respond }) => {
   console.error("Catpic error:", err?.response?.data || err.message);
 
   await respond({
-    text: "Something went wrong fetching the cat image :("
+    text: "Something went wrong fetching the cat image :( (hint: try using a different tag)"
   });
 }
 
