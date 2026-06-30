@@ -67,6 +67,8 @@ ${response.data.punchline}`
 
 app.command("/gabot-catpic", async ({ command, ack, respond }) => {
   await ack();
+
+  try {
   const tags = command.text.trim();
   const tagString = tags.replace(/\s+/g, ",");
 
@@ -84,6 +86,14 @@ app.command("/gabot-catpic", async ({ command, ack, respond }) => {
       }
     ]
   });
+} catch (err) {
+  console.error("Catpic error:", err?.response?.data || err.message);
+
+  await respond({
+    text: "Something went wrong fetching the cat image :("
+  });
+}
+
 });
 
 app.command("/gabot-dogpic", async ({ ack, respond }) => {
