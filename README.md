@@ -267,6 +267,7 @@ Subscribe to:
 * User statistics
 
 * AI chat integration
+
 ## What I Learned
 
 - How to build a Slack bot using Node.js and Slack Bolt
@@ -279,3 +280,15 @@ Subscribe to:
 - How systemd services run background processes and how to fix path issues
 - That APIs and external services can fail and need fallback handling
 - The difference between running code locally vs deploying it to a server
+
+## AI Usage
+
+I used AI as a learning and debugging assistant throughout this project. It helped me understand Slack Bolt, Node.js async/await behavior, and how slash commands work.
+
+It also helped me debug errors such as Axios API failures, Slack `invalid_blocks` formatting issues, and systemd service problems when deploying on a Linux server over SSH.
+
+In addition, AI was used to:
+- Help integrate and understand external APIs (cat facts, dog facts, jokes, images)
+- Improve error handling and reliability in the bot
+- Set up and fix systemd service configuration for background execution
+- Suggest improvements to code structure and documentation (README)
